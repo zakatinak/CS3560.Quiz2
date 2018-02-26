@@ -1,1 +1,1 @@
-# CS3560.Quiz2
+Quiz 2 Hands-On Version B
