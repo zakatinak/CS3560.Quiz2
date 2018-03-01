@@ -1,14 +1,20 @@
-/*************************************************************************
-      This file is borrowed heavily from Main/Savitch "Data Structures and
-      Other Object Using C++," Chapter 5. It features a node class that 
-      can be used in the construction of linked lists.
-                John Dolan  		March 2009
-*************************************************************************/
+/**
+*	@file
+*      This file is borrowed heavily from Main/Savitch "Data Structures and
+*      Other Object Using C++," Chapter 5. It features a node class that 
+*      can be used in the construction of linked lists.
+*                John Dolan  		March 2009
+*/
 
 #ifndef NODE_H
 #define NODE_H
 #include "course.h"
 
+/**
+* @class node node.h "node.h"
+* @brief This class is used in the construction of linked lists.
+*
+*/
 class node{
     public:
 	typedef course value_type;

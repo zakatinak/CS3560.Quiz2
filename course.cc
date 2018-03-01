@@ -1,8 +1,9 @@
-/***********************************************************************
-	The implementation file for course.h, which describes a college
-	course.
-		John Dolan		School of EECS		Summer2013
-**************************************************************************/
+/**
+*	@file
+*	The implementation file for course.h, which describes a college
+*	course.
+*		John Dolan		School of EECS		Summer2013
+*/
 #include "course.h"
 #include<cstdlib>
 #include<iostream>
@@ -13,6 +14,13 @@ using namespace std;
 course::course(){
     hours = 0.0;
 }
+
+/**
+*@fn void course::input(std::istream& ins)
+*@brief Takes course information from istream
+*@param ins std::istream variable by reference
+*@return returns void
+*/
 
 void course::input(std::istream& ins){
     if(ins == cin){
@@ -39,6 +47,13 @@ void course::input(std::istream& ins){
     }
 }
 
+/**
+*@fn void course::output(std::ostream& outs)const
+*@brief Prints course information to ostream
+*@param outs std::ostream variable by reference
+*@return returns void
+*/
+
 void course::output(std::ostream& outs)const{
     if(outs == cout){
 	outs<<"Course Number:"<<course_number<<endl;
@@ -52,7 +67,11 @@ void course::output(std::ostream& outs)const{
       }
 }
 
-
+/**
+*@fn double course::get_number_grade()const
+*@brief Gets the corresponding GPA value based on letter grade
+*@return returns a double
+*/
 double course::get_number_grade()const{
     if(grade == "A") return 4.0;
     if(grade == "A-") return 3.667;

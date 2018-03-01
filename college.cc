@@ -4,12 +4,23 @@
 //CS 2401
 //10/8/2015
 //********************
+
+/**
+*@file This is the implementation file of college.h. It allows the user to add or remove courses,
+* and calculate credit hours taken.
+*/
+
 #include "college.h"
 #include<cstdlib>
 #include<iostream>
 #include<iomanip>
 #include<string>
 using namespace std;
+
+/**
+*@fn College::College(std::string s)
+*@brief Constructor for College class using a string
+*/
 
 College::College(std::string s){
 	name = s;

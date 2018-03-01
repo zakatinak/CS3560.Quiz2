@@ -5,6 +5,11 @@
 //10/8/2015
 //********************
 
+/**
+* @file
+* Header file college.h for College class.
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -15,6 +20,10 @@
 #ifndef COLLEGE_H
 #define COLLEGE_H
 
+/**
+*@class College college.h "college.h"
+*@brief contains all courses for the semester
+*/
 
 class College{
 	public:

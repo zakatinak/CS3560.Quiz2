@@ -1,12 +1,13 @@
-/*********************************************************************
-	This is a class to introduce you to the syntax of working with 
-	template classes. Notice that the type being stored is completely
-	anonymous.
-	Your assignment is to implent the eight functions listed in this 
-	header in a tarray.template file.
-		Lab 7		Fall 2014
-	John Dolan			Ohio University 
-********************************************************************/
+/**
+*	@file
+*	This is a class to introduce you to the syntax of working with 
+*	template classes. Notice that the type being stored is completely
+*	anonymous.
+*	Your assignment is to implent the eight functions listed in this 
+*	header in a tarray.template file.
+*		Lab 7		Fall 2014
+*	John Dolan			Ohio University 
+*/
 
 #include<iostream>
 
@@ -16,9 +17,12 @@ class Tarray{
 	// Constructor makes an object with a dynamic array of size 5
 	Tarray(); 
 
-    	// This function puts the item into the next available spot in the 
-	//array.
-	// If the array is full, resize is called.
+    	/** @fn void add(T item)
+	* @param item an anonymous class type that the template is using
+	* This function puts the item into the next available spot in the 
+	*array.
+	* If the array is full, resize is called.
+	*/
 	void add(T item);
 
 	// iterator functions
